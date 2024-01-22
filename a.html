@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatGbt</title>
+    <style>
+         #myButton {
+        /* Butonun yuvarlak olması */
+        border-radius: 25px;
+        padding: 15px 40px;
+        border: none;
+        /* Butonun rengi ve arka planı */
+        color: #ffffff; /* Beyaz renk */
+        background-color: #4b0082; /* Lacivert */
+        /* Font stilini güncelleme */
+        font-size: 24px;
+        /* Ortada hizalama */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+        /* CSS ile büyük kutunun stilini ayarlıyoruz */
+        #messageContainer {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8); /* Arka plan rengi ve opaklık */
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 24px;
+            max-width: 80%; /* Maksimum genişlik */
+            width: auto; /* Otomatik genişlik */
+            height: auto; /* Otomatik yükseklik */
+        }
+        /* Kapatma işaretinin stili */
+        .closeButton {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            color: white;
+            cursor: pointer;
+        }
+        /* Input kutusunun stili */
+        #textInput {
+            margin: 20px 0;
+            padding: 8px;
+            width: 100%; /* Genişlik */
+            min-height: 100px; /* Minimum yükseklik */
+            resize: vertical; /* Dikey yönde yeniden boyutlandırma */
+            font-size: 16px;
+            display: block;
+            margin: 10px auto;
+            box-sizing: border-box;
+        }
+        /* Göster butonunun stili */
+        #showButton {
+            padding: 8px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        /* İçerik kutusunun stilini ayarlıyoruz */
+        #messageContent {
+            height: auto; /* İçerik boyutuna göre otomatik genişlik */
+        }
+    </style>
+</head>
+<body>
+   
+    <button id="myButton">ChatGbt Yorumu</button>
+
+    <!-- Mesajı göstereceğimiz büyük kutu içinde div -->
+    <div id="messageContainer">
+        <span class="closeButton" onclick="closeMessage()">X</span> <!-- Kapatma işareti -->
+        <textarea id="textInput" placeholder="Yazıyı buraya yapıştır"></textarea>
+        <button id="showButton" onclick="showText()">Göster</button> <!-- Yazıyı göstermek için buton -->
+        
+        <div id="messageContent"></div>
+    </div>
+
+    <script>
+        // Butona tıklandığında çalışacak JavaScript kodu
+        document.getElementById("myButton").addEventListener("click", function() {
+            // Div'in görünürlüğünü ve büyük kutu içindeki mesajı ayarlayan JavaScript kodu
+            var messageContainer = document.getElementById("messageContainer");
+            messageContainer.style.display = "block";
+        });
+
+        // Kapatma işareti fonksiyonu
+        function closeMessage() {
+            var messageContainer = document.getElementById("messageContainer");
+            var messageContent = document.getElementById("messageContent");
+            var textInput = document.getElementById("textInput");
+
+            // İçerik div'ini ve input alanını sıfırla
+            messageContent.innerText = "";
+            textInput.value = "";
+
+            messageContainer.style.display = "none";
+        }
+
+        // Yazıyı gösteren fonksiyon
+        function showText() {
+            var textInput = document.getElementById("textInput");
+            var messageContent = document.getElementById("messageContent");
+            messageContent.innerText = textInput.value;
+        }
+    </script>
+</body>
+</html>

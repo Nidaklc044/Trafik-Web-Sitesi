@@ -1,0 +1,244 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Proje| Portfolio</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link rel="stylesheet" href="../layout/styles/layout.css" type="text/css" />
+</head>
+<body id="top">
+<div class="wrapper row1">
+  <div id="topnav">
+    <ul>
+      <li><a href="../index.html"><strong>ANA MENÜ</strong></a></li>
+      <li><a href="havadurumu.html"><strong>HAVA DURUMU</strong></a></li>
+      <li class="active"><a href="haberler.html"><strong>HABERLER</strong></a></li>
+ <li><a href="istatistikler.html"><strong>İSTATİSTİKLER</strong></a></li>
+        </ul>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper row2">
+  <div id="header" class="clear">
+    <div class="fl_left">
+      <h1>İSTATİSTİK!</h1>
+      <p>VERİLER BURDA!</p>
+    </div>
+    <div class="fl_right">
+      <form action="#" method="post" id="sitesearch">
+        <fieldset>
+          <legend>Site Search</legend>
+          <input type="text" />
+          <input type="image" src="../layout/images/search.gif" id="search" alt="Search" />
+        </fieldset>
+      </form>
+ 
+    </div>
+  </div>
+</div>
+
+
+<style>
+  /* Buton Stili */
+  .dropdown-btn {
+    background-color: #f1f1f1;
+    color: black;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  /* Dropdown İçeriği */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 200px;
+    overflow-y: auto;
+    max-height: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  /* Dropdown İçeriğinin Gösterilmesi */
+  .show {
+    display: block;
+  }
+
+  /* Stil Özelleştirmeleri */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  /* Resim Stili */
+  #resimAlanı {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Uyarı Levhası */
+  .uyari-levhasi {
+    background-color: #ffcc00;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+  }
+</style>
+</head>
+
+    <select id="resimSecimi" onchange="changeImage()">
+      <option value="images/demo/4.png">Trafik Kazası İstatistikleri</option>
+      <option value="images/demo/3.png">Toplam İnsan Sayısı</option>
+      <option value="images/demo/2.png">Ölü Sayısı</option>
+      <option value="images/demo/1.png">Yaralı Sayısı</option>
+    </select>
+
+    <img id="resimAlanı" src="images/demo/4.png" alt="Seçilen Resim">
+    
+    <script>
+      function changeImage() {
+        var resimSecimi = document.getElementById("resimSecimi");
+        var resimAlanı = document.getElementById("resimAlanı");
+        var secilenResim = resimSecimi.value;
+        resimAlanı.src = secilenResim;
+      }
+    </script>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+
+<!-- ####################################################################################################### -->
+<div class="wrapper row5">
+  <div id="container" class="clear"> 
+    <!-- ####################################################################################################### -->
+<!-- Şehir Bazlı Haberler Kısmı -->
+<div class="wrapper row5" style="background-color: #f8f8f8; padding: 20px;">
+  <div id="container" class="clear"> 
+    <h2 style="text-align: center; color: #480cd4; font-family: 'Arial Black', sans-serif; font-size: 20px; text-transform: margin;;">
+      <em>Şehir bazlı haberlere ulaşmak için tıklayınız!</em>
+    </h2>
+    <div style="text-align: center;">
+      <a href="http://127.0.0.1:5000/" style="text-decoration: none; color: #fff; padding: 10px 20px; border-radius: 20px; background-color: #310446; transition: background-color 0.3s;">
+        <span style="display: inline-block; vertical-align: middle; font-weight: bold;">Şehir Bazlı Haberlere Git</span>
+        <span style="display: inline-block; width: 0; height: 0; border-top: 8px solid transparent; border-bottom: 8px solid transparent; border-left: 8px solid #fbff00; vertical-align: middle;"></span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<style>
+  /* Bağlantı Üzerine Gelindiğinde */
+  a:hover {
+    background-color: #0055cc;
+  }
+
+  /* Bağlantıya Göz Attığında */
+  a:active {
+    background-color: #b91919;
+  }
+</style>
+
+   <!-- ####################################################################################################### --> 
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="academiclinks" class="clear">
+    <div class="linkbox">
+      <h2>Trafik </h2>
+      <ul>
+        <li><a href="https://www.kgm.gov.tr/sayfalar/kgm/sitetr/trafik/tehlikeuyariisaretleri.aspx">&raquo; Trafik kuralları </a></li>
+        <li><a href="https://www.sigortam.net/trafik-cezalari">&raquo; Trafik Cezaları</a></li>
+        <li><a href="https://www.kgm.gov.tr/Sayfalar/KGM/SiteTr/Trafik/YatayIsaretleme.aspx">&raquo; Trafik Yol İşaretleri</a></li>
+        <li><a href="https://www.generali.com.tr/sigorta-rehberi/kasko-sigortasi/trafikte-gecis-ustunlugu-nedir-gecis-ustunlugu-olan-araclar-nelerdir">&raquo; Trafik Yol Hakları</a></li>
+             </ul>
+    </div>
+    <div class="linkbox">
+      <h2>ACİL DURUM NUMARALARI</h2>
+      <ul>
+        <li><a href="https://www.112.gov.tr/hakkimizda">&raquo; 112 (ACİL ÇAĞRI MERKEZİ)</a></li>
+        <li><a href="https://www.112.gov.tr/hakkimizda">&raquo; 155 (POLİS)</a></li>
+        <li><a href="https://www.112.gov.tr/hakkimizda">&raquo; 156 (JANDARMA)</a></li>
+        <li><a href="https://www.112.gov.tr/hakkimizda">&raquo; 110 (İTFAYE)</a></li>
+
+      </ul>
+    </div>
+    <div class="linkbox">
+      <h2>İLK YARDIM</h2>
+      <ul>
+        <li><a href="https://www.ilkyardim.org.tr/trafik-kazalarinda-ilk-yardim.html">&raquo; İlk Müdahale</a></li>
+        <li><a href="https://www.kizilaykagithane.org.tr/ilk-yardim-bilgileri-ve-uygulamalari/">&raquo; ilk Yardım Bilgileri</a></li>
+        <li><a href="https://www.kizilaykagithane.org.tr/ilk-yardim-egitimi/">&raquo; İlk Yardım Eğitimi</a></li>
+        <li><a href="https://www.kizilaykagithane.org.tr/nevarsaiyiliktevar/">&raquo; Kızılay Bağış </a></li>
+        
+      </ul>
+    </div>
+    <div class="linkbox last">
+      <h2>İLK MÜDaHALE</h2>
+      <ul>
+        <li><a href="https://bilheal.bilkent.edu.tr/aykonu/ay2004/mayis2004/diskalpmasajay.html">&raquo; Kalp Masajı</a></li>
+
+        <li><a href="https://www.hurriyet.com.tr/mahmure/sok-durumlarinda-ilkyardim-34473846">&raquo; Şok Durumu</a></li>
+        <li><a href="https://www.haberturk.com/suni-teneffus-nedir-suni-teneffus-nasil-yapilir-hbrt-2651763">&raquo; Suni Tenefüs</a></li>
+      <li><a href="https://acilafet.saglik.gov.tr/TR-84262/kanamalarda-ilk-yardim.html">&raquo; Kanama</a></li>
+  
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- ####################################################################################################### -->
+<div class="wrapper">
+  <div id="footer" class="clear"> 
+    <!-- ####################################################################################################### -->
+    <div class="fl_left clear">
+      <div class="fl_left center"><img src="../images/demo/worldmap.gif" alt="" /><br />
+        <a href="https://www.google.com/maps/place/Ata%C5%9Fehir,+Ata%C5%9Fehir+Atat%C3%BCrk,+34758+Dudullu+Osb%2FAta%C5%9Fehir%2F%C4%B0stanbul/@40.9938797,29.1306712,13z/data=!4m6!3m5!1s0x14cac8a7d44b6587:0x208a1d8ff0bf7e10!8m2!3d40.9869642!4d29.1319157!16zL20vMDliZmJj?entry=ttu"> &raquo;Bizi Google Haritalar ile Bulun  &raquo;</a></div>
+      <address>
+ İstanbul<br />
+     Ankara(2)<br />
+      Ataşehir/İstanbul<br />
+      34000<br />
+      <br />
+      Tel: (0424) 251-3434<br />
+      Email: <a href="#">Analizsirketi@gmail.com</a>
+      </address>
+    </div>
+    <div class="fl_right">
+      <div id="social" class="clear">
+   
+        <ul>
+          <li><a style="background-position:0 0;" href="#">Twitter</a></li>
+          <li><a style="background-position:-72px 0;" href="#">LinkedIn</a></li>
+          <li><a style="background-position:-142px 0;" href="#">Facebook</a></li>
+          <li><a style="background-position:-212px 0;" href="#">Flickr</a></li>
+          <li><a style="background-position:-282px 0;" href="#">RSS</a></li>
+        </ul>
+      </div>
+      <div id="newsletter">
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Haber bültenimize abone ol:</legend>
+            <input type="text" value="e-mail buraya&hellip;" onfocus="this.value=(this.value=='Enter Email Here&hellip;')? '' : this.value ;" />
+            <input type="text" id="subscribe" value="Submit" />
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <div id="copyright" class="clear">
+      <p class="fl_left"> &copy; 2014 - Tüm Haklar Saklıdır - <a href="#"></a></p>
+         </div>
+    <!-- ####################################################################################################### --> 
+  </div>
+</div>
+</body>
+</html>
